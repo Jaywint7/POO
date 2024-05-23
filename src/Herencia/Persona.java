@@ -1,11 +1,25 @@
 package Herencia;
 //EL padre hererda a la hija y la hija hereda a la hija
 public class Persona {
-    String nombre;
+    String apellido;
     int edad;
-    public Persona(String nombre, int edad){
+    public Persona(String apellido, int edad){
         this.nombre=nombre;
         this.edad = edad;
+    }
+    public void Info() {
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Edad: "+edad);
+    }
+}
+
+class Hija extends Persona{
+    String objeto;
+    String ropa;
+    public Hija(String objeto, String ropa){
+        super(ropa);
+        this.objeto = objeto;
+
     }
     public void Info() {
         System.out.println("Nombre: "+nombre);
@@ -15,4 +29,8 @@ public class Persona {
         Persona persona = new Persona("Juan", 15);
         persona.Info();
     }
+}
+
+class Hija2 extends Hija{
+
 }
