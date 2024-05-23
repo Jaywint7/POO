@@ -1,5 +1,5 @@
 package Herencia;
-
+//EL padre hererda a la hija y la hija hereda a la hija
 public class Persona {
     String nombre;
     public Persona(String nombre){
